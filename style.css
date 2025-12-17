@@ -1,0 +1,25 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #000;
+    --blue: #1f3e5a;
+    --grey100: #e7e7e7;
+    --grey550: #878d92;
+    --grey600: #4c5862;
+    --grey950: #24242c;
+    --purple800: #52526f;
+    --purple900: #3e4062;
+    --purple950: #2d2e40;
+    --red50: #f9f6f6;
+    --red400: #ff7b86;
+    --red500: #ff505c;
+    --white: #fff;
+    --gradient1: linear-gradient(#2d2e40, #3f4164);
+    --gradient2: linear-gradient(#ff8f71, #ff3e55);
+}

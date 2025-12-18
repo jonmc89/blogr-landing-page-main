@@ -23,3 +23,92 @@
     --gradient1: linear-gradient(#2d2e40, #3f4164);
     --gradient2: linear-gradient(#ff8f71, #ff3e55);
 }
+
+body {
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+}
+
+/* Main Styles */
+
+header {
+    background: url(./images/bg-pattern-intro-mobile.svg) -23rem -18rem / 90rem
+            no-repeat,
+        var(--gradient2);
+    border-bottom-left-radius: 8rem;
+    color: var(--white);
+    height: 36.7rem;
+    padding: 3.5rem 1rem;
+    position: relative;
+}
+
+.main-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 5rem;
+    z-index: 2;
+}
+
+.main-header-menu-btn {
+    cursor: pointer;
+}
+
+.hero-container {
+    text-align: center;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-block-end: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-block-end: 2.5rem;
+}
+
+.hero-btn-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+    padding: 0.7rem 1.5rem;
+}
+
+.start-btn {
+    border: 0.15rem solid var(--white);
+    color: var(--red500);
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.start-btn:hover {
+    border-color: var(--red400);
+    background-color: var(--red400);
+    color: var(--white);
+}
+
+.learn-btn {
+    background-color: transparent;
+    border: 0.15rem solid var(--white);
+    color: var(--white);
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.learn-btn:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--red400);
+}

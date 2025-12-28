@@ -21,8 +21,78 @@
     </head>
     <body>
         <header>
+            <div id="mobileMenu" class="mobile-menu">
+                <nav class="mobile-menu-nav">
+                    <a class="mobile-nav-link" href="#"
+                        >Product <img src="./images/icon-arrow-dark.svg" alt=""
+                    /></a>
+                    <a class="mobile-nav-link" href="#"
+                        >Company <img src="./images/icon-arrow-dark.svg" alt=""
+                    /></a>
+                    <a id="mobileNavLink2" class="mobile-nav-link" href="#"
+                        >Connect
+                        <img
+                            id="mobileArrow"
+                            src="./images/icon-arrow-dark.svg"
+                            alt=""
+                    /></a>
+                    <div id="dropMenu" class="drop-menu">
+                        <a class="drop-menu-link" href="#">Contact</a>
+                        <a class="drop-menu-link" href="#">Newsletter</a>
+                        <a class="drop-menu-link" href="#">Linkedin</a>
+                    </div>
+                    <hr class="mobile-nav-seperator" />
+                    <div class="mobile-nav-signup-login-container">
+                        <a class="mobile-nav-link" href="#">Login</a>
+                        <button class="mobile-nav-btn" type="button">
+                            Sign up
+                        </button>
+                    </div>
+                </nav>
+            </div>
             <div class="main-header">
-                <img class="" src="./images/logo.svg" alt="logo" />
+                <div class="logo-desktop-nav-container">
+                    <img class="" src="./images/logo.svg" alt="logo" />
+                    <nav class="desktop-nav">
+                        <a class="desktop-nav-link" href="#"
+                            >Product
+                            <img src="./images/icon-arrow-light.svg" alt=""
+                        /></a>
+                        <a class="desktop-nav-link" href="#"
+                            >Company
+                            <img src="./images/icon-arrow-light.svg" alt=""
+                        /></a>
+                        <div class="desktop-connect-container">
+                            <a
+                                id="desktopDropDownLink"
+                                class="desktop-nav-link"
+                                href="#"
+                                >Connect
+                                <img
+                                    id="desktopArrow"
+                                    src="./images/icon-arrow-light.svg"
+                                    alt=""
+                            /></a>
+                            <div id="desktopDropDown" class="desktop-drop-menu">
+                                <a class="desktop-drop-link" href="#"
+                                    >Contact</a
+                                >
+                                <a class="desktop-drop-link" href="#"
+                                    >Newletter</a
+                                >
+                                <a class="desktop-drop-link" href="#"
+                                    >Linkedin</a
+                                >
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="desktop-login-signup-container">
+                    <a class="desktop-sign-up-link" href="#">Login</a>
+                    <button type="button" class="desktop-signup-btn">
+                        Sign up
+                    </button>
+                </div>
                 <img
                     id="menuBtn"
                     class="main-header-menu-btn"
@@ -43,5 +113,6 @@
                 </div>
             </section>
         </header>
+        <script src="script.js"></script>
     </body>
 </html>

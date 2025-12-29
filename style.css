@@ -26,6 +26,7 @@
 
 body {
     font-family: "Overpass", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Main Styles */
@@ -37,6 +38,7 @@ header {
     border-bottom-left-radius: 8rem;
     color: var(--white);
     height: 36.7rem;
+    margin-block-end: 6rem;
     padding: 3.5rem 2rem;
     position: relative;
 }
@@ -331,4 +333,108 @@ button {
 
 .drop-menu-link:hover {
     color: var(--red500);
+}
+
+/* First Article */
+
+.first-article {
+    margin-block-end: 6rem;
+    padding: 0 2rem;
+}
+
+@media screen and (min-width: 51.25rem) {
+    .first-article {
+        padding: 0 8rem;
+    }
+}
+.first-article-content-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+@media screen and (min-width: 90em) {
+    .first-article-content-container {
+        flex-direction: row-reverse;
+        gap: 3rem;
+    }
+}
+
+.first-article-img-container {
+    position: relative;
+
+    width: 100%;
+}
+
+.first-article-text-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.first-article-img-mobile {
+    height: auto;
+    width: 100%;
+}
+
+.first-article-img-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 90em) {
+    .first-article-img-mobile {
+        display: none;
+    }
+
+    .first-article-img-desktop {
+        display: block;
+        position: absolute;
+        height: auto;
+        top: -25rem;
+        right: -30rem;
+        width: 60rem;
+    }
+}
+
+.first-article-header,
+.first-article-subheader {
+    color: var(--purple900);
+}
+
+.first-article-header {
+    font-size: 2rem;
+    margin-block-end: 3.5rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 90em) {
+    .first-article-header {
+        margin-block-end: 5rem;
+    }
+}
+
+.first-article-subheader {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 100%;
+}
+
+.first-article-text {
+    color: var(--grey600);
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+@media screen and (min-width: 90em) {
+    .first-article-text-container {
+        width: 70%;
+    }
+
+    .first-article-subheader,
+    .first-article-text {
+        text-align: left;
+    }
 }

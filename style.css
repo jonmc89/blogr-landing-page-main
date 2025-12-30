@@ -26,7 +26,6 @@
 
 body {
     font-family: "Overpass", Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
 }
 
 /* Main Styles */
@@ -338,33 +337,23 @@ button {
 /* First Article */
 
 .first-article {
-    margin-block-end: 6rem;
-    padding: 0 2rem;
+    margin-block-end: 14rem;
 }
 
-@media screen and (min-width: 51.25rem) {
-    .first-article {
-        padding: 0 8rem;
-    }
-}
 .first-article-content-container {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+    overflow-x: hidden;
+    padding: 0 2rem;
 }
 
 @media screen and (min-width: 90em) {
     .first-article-content-container {
-        flex-direction: row-reverse;
-        gap: 3rem;
+        flex-direction: row;
+        padding: 0 0 0 4rem;
     }
-}
-
-.first-article-img-container {
-    position: relative;
-
-    width: 100%;
 }
 
 .first-article-text-container {
@@ -390,11 +379,7 @@ button {
 
     .first-article-img-desktop {
         display: block;
-        position: absolute;
-        height: auto;
-        top: -25rem;
-        right: -30rem;
-        width: 60rem;
+        transform: translateX(18rem);
     }
 }
 
@@ -407,12 +392,6 @@ button {
     font-size: 2rem;
     margin-block-end: 3.5rem;
     text-align: center;
-}
-
-@media screen and (min-width: 90em) {
-    .first-article-header {
-        margin-block-end: 5rem;
-    }
 }
 
 .first-article-subheader {
@@ -431,10 +410,66 @@ button {
 @media screen and (min-width: 90em) {
     .first-article-text-container {
         width: 70%;
+        grid-column: 1;
+        grid-row: 1;
     }
 
     .first-article-subheader,
     .first-article-text {
         text-align: left;
     }
+}
+
+/* Second Article */
+
+.second-article {
+    position: relative;
+}
+
+.second-article-content-container {
+    background-color: var(--purple900);
+    border-top-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    color: var(--white);
+    overflow: hidden;
+    padding: 18rem 1rem 10rem 1rem;
+    position: relative;
+}
+
+.second-article-circles {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(7447%)
+        hue-rotate(24deg) brightness(112%) contrast(92%);
+    height: auto;
+    left: 50%;
+    opacity: 0.3;
+    position: absolute;
+    top: -16rem;
+    transform: translateX(-50%);
+    width: 40rem;
+    z-index: 0;
+}
+
+.second-article-img-mobile {
+    height: auto;
+    left: 50%;
+    position: absolute;
+    top: -10rem;
+    transform: translateX(-50%);
+    width: 24rem;
+    z-index: 2;
+}
+
+.second-article-text-container {
+    text-align: center;
+    z-index: 3;
+}
+
+.second-article-header {
+    font-size: 1.8rem;
+    margin-block-end: 2rem;
+}
+
+.second-article-text {
+    font-size: 1.1rem;
+    line-height: 200%;
 }
